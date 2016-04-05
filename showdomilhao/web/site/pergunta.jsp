@@ -1,9 +1,18 @@
-<%-- 
-    Document   : pergunta
-    Created on : 21/03/2016, 15:37:13
-    Author     : marcelosiedler
---%>
-
+<%@page import="modelo.Pergunta"%>
+<%@page import="modelo.Jogo"%>
+<%
+    /*  Quando o JOGO COMEÇA
+        - INICIALIZA O MEU JOGO
+        - BUSCAR A LISTA DE PERGUNTAS
+        - GUARDAR O MEU JOGO NA session
+        - EXIBIR A PRIMEIRA PERGUNTA NA TELA
+    */
+    
+    Jogo jogo = new Jogo();
+    
+    Pergunta pergunta = jogo.getPerguntas().get(0);
+    
+%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

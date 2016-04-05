@@ -1,11 +1,10 @@
-<%-- 
-    Document   : jogo
-    Created on : 21/03/2016, 15:37:22
-    Author     : marcelosiedler
---%>
-
+<%@page import="modelo.Jogador"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
+<%
+    Jogador jogador = (Jogador)session.getAttribute("spiderman");
+%>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -14,7 +13,7 @@
     </head>
     <body>
         <div class="usuario">
-        Siedler
+            <%=jogador.getLogin()%>
         </div>
         <div class="centralizar">
             <img src="img/show.png" alt=""/>

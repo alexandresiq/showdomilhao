@@ -4,7 +4,6 @@
 <%@include file="../cabecalho.jsp"%>
 <%
     String categoria = request.getParameter("selCategoria");
-
     PerguntaDAO dao = new PerguntaDAO();
     Pergunta pergunta = new Pergunta();
     Categoria obj = new Categoria();
@@ -17,9 +16,7 @@
     String d = request.getParameter("txtD");
     Integer nivel = Integer.parseInt(request.getParameter("txtNivel"));
     String certa = request.getParameter("txtCerta");
-
     
-
     pergunta.setEnunciado(enunciado);
     pergunta.setA(a);
     pergunta.setB(b);
@@ -28,7 +25,6 @@
     pergunta.setNivel(nivel);
     pergunta.setCerta(certa);
     pergunta.setCategoria(obj);
-
     dao.incluir(pergunta);
 %>
 
@@ -46,4 +42,3 @@
 </section>
 
 <%@include file="../rodape.jsp"%>
-

@@ -54,7 +54,7 @@
           <a href="indexadmin.jsp" class="mdl-layout__tab">Inicial</a>
           <a href="categoria/list.jsp" class="mdl-layout__tab">Categoria</a>
           <a href="jogador/list.jsp" class="mdl-layout__tab">Jogador</a>
-          <a href="Pergunta/list.jsp" class="mdl-layout__tab">Pergunta</a>
+          <a href="pergunta/list.jsp" class="mdl-layout__tab">Pergunta</a>
           
         </div>
       </header>

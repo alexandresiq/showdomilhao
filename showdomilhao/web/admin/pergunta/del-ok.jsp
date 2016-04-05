@@ -1,5 +1,12 @@
+<%@page import="modelo.Pergunta"%>
+<%@page import="dao.PerguntaDAO"%>
 <%@include file="../cabecalho.jsp"%>
-
+<%
+    String id = request.getParameter("id"); 
+    PerguntaDAO dao = new PerguntaDAO();
+    Pergunta pergunta = dao.buscarPorChavePrimaria(Integer.parseInt(id));
+    dao.excluir(pergunta);
+%>
 
 <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
     <div class="mdl-card mdl-cell mdl-cell--12-col">

@@ -59,7 +59,11 @@ public class PerguntaDAO {
             em.close();
         }
     }
-
+    
+    public Pergunta buscarPorChavePrimaria(Integer chave){
+        return em.find(Pergunta.class, chave);
+    }
+    
     public void fechaEmf() {
         Conexao.closeConexao();
     }

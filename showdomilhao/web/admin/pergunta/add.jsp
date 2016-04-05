@@ -17,7 +17,7 @@
                 -->
                 <div class="mdl-cell--12-col"> 
                     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-                        <input class="mdl-textfield__input" type="Long" disabled required  name="txtId" />
+                        <input class="mdl-textfield__input" type="Integer" disabled required  name="txtId" />
                         <label class="mdl-textfield__label" for="txtId">ID - Fornecido pelo sistema</label>
                     </div>
                 </div>
@@ -60,10 +60,10 @@
                 <div class="mdl-cell--12-col">
                     <div class="mdl-select mdl-js-select mdl-select--floating-label">
                         <select class="mdl-select__input" id="txtCerta" name="txtCerta">
-                            <option value="txtA">A</option>
-                            <option value="txtB">B</option>
-                            <option value="txtC">C</option>
-                            <option value="txtD">D</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="C">C</option>
+                            <option value="D">D</option>
                         </select>
                         <label class="mdl-select__label" for="txtCerta">Alternativa Correta</label>
                     </div>
@@ -103,5 +103,3 @@
 </section>
 
 <%@include file="../rodape.jsp"%>
-
-

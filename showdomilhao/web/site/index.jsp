@@ -11,7 +11,7 @@
         
         jogador = dao.realizarLogin(login, senha);
         if(jogador !=null){
-            session.setAttribute("Batman", jogador);
+            session.setAttribute("spiderman", jogador);
             response.sendRedirect("jogo.jsp");
         }
         else{
@@ -39,7 +39,7 @@
                 <input type="text" name="txtEntrarLogin"
                        /><br/>
                 <label>Senha</label>
-                <input type="text" name="txtEntrarSenha"
+                <input type="password" name="txtEntrarSenha"
                        /><br/>
                 <input type="submit" value="Entrar" />
                 <a href="jogo.jsp">Pular login</a>
