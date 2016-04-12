@@ -2,7 +2,7 @@
 <%@page import="dao.JogadorDAO"%>
 <%@include file="../cabecalho.jsp"%>
 <%
-    String login = request.getParameter("login");
+    String login = request.getParameter("txtLogin");
     JogadorDAO dao = new JogadorDAO();
     Jogador obj = dao.buscarPorChavePrimaria(login);
     dao.excluir(obj);

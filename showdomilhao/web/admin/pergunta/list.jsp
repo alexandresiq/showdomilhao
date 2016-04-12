@@ -8,7 +8,7 @@
 %>
 
 
-<!-- gambiarra pra alinhar o botão a esquerda-->
+<!-- gambiarra pra alinhar o botão a direita-->
 <style>
     .direita
     {
