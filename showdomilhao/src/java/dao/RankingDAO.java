@@ -23,7 +23,7 @@ public class RankingDAO {
             em.getTransaction().rollback();
             throw e;
         } finally {
-            em.close();
+            //em.close();
             
         }
         
@@ -31,6 +31,10 @@ public class RankingDAO {
 
     public List<Ranking> listar() throws Exception {
         return em.createNamedQuery("Ranking.findAll").getResultList();
+    }
+    
+    public List<Ranking> listartop() throws Exception {
+        return em.createNamedQuery("Ranking.top").setMaxResults(10).getResultList();
     }
     
     public void alterar(Ranking obj) throws Exception {
@@ -43,7 +47,7 @@ public class RankingDAO {
             em.getTransaction().rollback();
             throw e;
         } finally {
-            em.close();
+            //em.close();
         }
     }
     
@@ -56,11 +60,12 @@ public class RankingDAO {
         } catch (RuntimeException e) {
             em.getTransaction().rollback();
         } finally {
-            em.close();
+            //em.close();
         }
     }
 
     public void fechaEmf() {
+        em.close();
         Conexao.closeConexao();
     }
 }

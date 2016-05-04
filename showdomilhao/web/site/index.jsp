@@ -53,7 +53,7 @@
                         </button>
                     </div>                    
                 </form>
-                <br/> <a href="jogo.jsp" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Pular login</a>
+                <br/> <a href="jogo.jsp?jogador=anonimo" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Pular login</a>
                 <hr/>
                 <h4>Cadastre-se</h4>
                 <a href="cadastro.jsp" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Realizar Cadastro</a>

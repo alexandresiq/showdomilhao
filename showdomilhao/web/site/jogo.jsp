@@ -3,13 +3,13 @@
 <!DOCTYPE html>
 
 <%
-    Jogador jogador = (Jogador)session.getAttribute("spiderman");
+    Jogador jogador = (Jogador) session.getAttribute("spiderman");
 %>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Show do Milhão</title>
-          <link rel="stylesheet" href="css/estilo.css"/>
+        <link rel="stylesheet" href="css/estilo.css"/>
     </head>
     <body>
         <div class="usuario">
@@ -18,10 +18,15 @@
         <div class="centralizar">
             <img src="img/show.png" alt=""/>
             <br/>
-            
+
             <a href="pergunta.jsp">Iniciar Jogo</a>
             <a href="index.jsp">Sair</a>
+            <%
+                if (request.getParameter("sair") != null) {
+                    session.setAttribute("usuario", null);
+                }
+            %>
         </div>
-        
+
     </body>
 </html>

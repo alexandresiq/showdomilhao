@@ -24,7 +24,7 @@ public class CategoriaDAO {
             em.getTransaction().rollback();
             throw e;
         } finally {
-            em.close();
+            //em.close();
             
         }
         
@@ -44,7 +44,7 @@ public class CategoriaDAO {
             em.getTransaction().rollback();
             throw e;
         } finally {
-            em.close();
+            //em.close();
         }
     }
     
@@ -57,7 +57,7 @@ public class CategoriaDAO {
         } catch (RuntimeException e) {
             em.getTransaction().rollback();
         } finally {
-            em.close();
+            //em.close();
         }
     }
     
@@ -66,6 +66,7 @@ public class CategoriaDAO {
     }
 
     public void fechaEmf() {
+        em.close();
         Conexao.closeConexao();
     }
 }
